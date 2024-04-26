@@ -1,0 +1,35 @@
+#stats {
+    width: 310px;
+    height: 200px;
+    position: fixed;
+    right: 5px;
+    top: auto;
+    bottom: 10px;
+    z-index: 500;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+p {
+    color: white;
+}
+.buttonB {
+    border-radius: 5px;
+    border: none;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+.buttonB:hover {
+    border-bottom: 5px solid #000000;
+}
+
+#question-form {
+    margin-top: 70px;
+    margin-left: 30%;
+}

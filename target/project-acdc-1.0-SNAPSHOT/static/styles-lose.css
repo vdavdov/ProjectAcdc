@@ -1,0 +1,19 @@
+div {
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.buttonLose {
+    border-radius: 5px;
+    border: none;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+}
+.buttonLose:hover {
+    border-bottom: 5px solid #000000;
+}

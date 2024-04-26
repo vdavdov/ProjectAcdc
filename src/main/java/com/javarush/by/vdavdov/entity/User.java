@@ -1,19 +1,15 @@
 package com.javarush.by.vdavdov.entity;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Objects;
 
+@Data
 public class User {
-    @Getter
-    @Setter
     private Long id;
-    @Getter
-    @Setter
     private String name;
-    @Setter
-    @Getter
     private int score;
     private final String ipAddress;
 
@@ -21,6 +17,7 @@ public class User {
         this.name = name;
         this.ipAddress = ipAddress;
     }
+
     public void nextLevel() {
         setScore(score + 1);
     }
@@ -37,6 +34,7 @@ public class User {
     public int hashCode() {
         return Objects.hash(id, name);
     }
+
     @Override
     public String toString() {
         return "User{" +

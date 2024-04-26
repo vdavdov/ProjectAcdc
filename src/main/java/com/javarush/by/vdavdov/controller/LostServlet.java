@@ -14,8 +14,8 @@ import java.io.IOException;
 import static com.javarush.by.vdavdov.constants.Constants.*;
 
 @WebServlet(urlPatterns = LOSE_SERVLET)
-public class LoseServlet extends HttpServlet {
-    static final Logger logger = LogManager.getLogger(LoseServlet.class);
+public class LostServlet extends HttpServlet {
+    static final Logger logger = LogManager.getLogger(LostServlet.class);
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -26,11 +26,9 @@ public class LoseServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        //when restart remove score
         HttpSession session = req.getSession();
         session.removeAttribute("score");
         logger.info("User's {} score remove success, game restarted", req.getRemoteAddr());
-        //redirect to home
         resp.sendRedirect(HOME_SERVLET);
     }
 }
